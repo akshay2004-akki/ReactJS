@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700&family=Bitter:wght@400;500;700&display=swap');
+
+
+body{
+  background-color: rgba(211, 211, 211, 0.338);
+}
+
+@media (max-width:486px){
+  /* .dis{
+    display: none;
+  } */
+  img{
+    width: 486px;
+  }
+}
+
+@media (max-width:1000px){
+  .image{
+    /* justify-content: center; */
+    width: 534px;
+    overflow: scroll;
+    display: flex;
+  }
+  img{
+    width:486px;
+    height: 227px;
+  }
+}
+
+@media (max-width:936px){
+  .contents{
+    padding-left: 0;
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .sidebar {
+    background-color: #fff;
+  }
+}
+/* Assuming you're using Bootstrap for the my-2, mx-4, etc. classes */
+
+/* CSS for buttons */
+.left-scroll-btn,
+.right-scroll-btn {
+  border: none;
+  height: 50px;
+  background: transparent;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.left-scroll-btn {
+  left: 0;
+}
+
+.right-scroll-btn {
+  right: 0;
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
+  .left-scroll-btn,
+  .right-scroll-btn {
+    height: 30px; /* Adjust height for smaller screens */
+  }
+}
+
+
+.close{
+  transition-duration: 0.3s;
+}
+.close:hover {
+  transform: rotate3d(0, 0, 1, 90deg);
+}
+.items:hover{
+  background-color: #fff;
+  color: #111;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the scroll thumb */
+  border-radius: 8px; /* Rounded corners */
+}
+
+/* Styles for the track of the scroll bar */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the scroll track */
+}
+
+/* Styles for the scrollbar itself */
+::-webkit-scrollbar {
+  width: 7px; /* Width of the scrollbar */
+  height: 0px;
+}
+
+.store_card_offer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 13px;
+  background: #da0325;
+  font-weight: bold;
+  height: 24px;
+  color: #fff;
+  line-height: 24px;
+  padding-left: 10px;
+  -webkit-border-radius: 10px 0 0 0;
+  -moz-border-radius: 10px 0 0 0;
+  border-radius: 6px 0 0 0;
+}
+
+.store_card_offer::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-width: 12px;
+  border-style: solid;
+  border-color: #da0325 transparent#da0325#da0325;
+  position: absolute;
+  top: 0;
+  right: -20px;
+}
+
+.store_card_offer span {
+  position: relative;
+}
+
+.catdeal_c>span {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  background: #da0325;
+  color: #fff;
+  font-size: 11px;
+  height: 21px;
+  line-height: 20px;
+  padding: 0 8px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  border-top-right-radius: 6px;
+}
+
+.catdeal_c>span::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-width: 11px;
+  border-style: solid;
+  border-color: #da0325 transparent#da0325#da0325;
+  position: absolute;
+  top: 0px;
+  right: 100%;
+  transform: rotateY(180deg);
+}
+
+li{
+  list-style-type: none;
+}
+li i{
+  transition-duration:0.3s ;
+}
+li:hover i{
+  transform: translateX(3px);
+}
+li:hover{
+  cursor: pointer;
+}
+
+
+.heading.container {
+  position: relative;
+  text-align: center;
+  font-size: 33px;
+  font-family: Dosis;
+  margin-bottom: 20px; 
+}
+
+.heading.container::before,
+.heading.container::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 10%; 
+  height: 2px;
+  background-color: #000; 
+  transition: width 0.3s ease; 
+}
+
+.heading.container::before {
+  left: 0; 
+}
+
+.heading.container::after {
+  right: 0; 
+}
+.footer{
+  display:grid; 
+  grid-template-columns:repeat(4,1fr);
+  transform:translateY(40px)
+}
+
+.heading.container:hover::before,
+.heading.container:hover::after {
+  width: 50%; 
+}
+@media (max-width:768px){
+  .display{
+    display: none;
+  }
+  .footer{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (max-width:574px){
+  .footer{
+    display: flex;
+    justify-content: space-around;
+  }
+}

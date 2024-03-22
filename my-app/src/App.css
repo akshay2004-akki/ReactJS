@@ -1,0 +1,9 @@
+input{
+    width:100px;
+    height: 30px;
+    font-size: 18px;
+}
+
+.container{
+    border-radius: 15px;
+}
