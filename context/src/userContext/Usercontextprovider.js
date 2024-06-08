@@ -6,7 +6,7 @@ function Usercontextprovider({children}) {
     const [isName, setIsName] = useState(null)
   return (
     <UserContext.Provider value={{user,setUser, isName, setIsName}}>
-        {children}
+        {children} 
     </UserContext.Provider>
   )
 }

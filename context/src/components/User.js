@@ -7,4 +7,4 @@ function User() {
     else return <div>akshay : {isName.isNames}</div> // props from the app.js component is passed without prop drilling
 }
 
-export default User
+export default User 

@@ -10,7 +10,7 @@ function ThemeBtn() {
             darkMode()
         }
         else{
-            lightMode()
+            lightMode() 
         }
     }
     

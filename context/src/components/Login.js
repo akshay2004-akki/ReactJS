@@ -6,7 +6,7 @@ import User from './User'
 function Login({isNames}) {
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
-    const {setUser} = useContext(Usercontext)
+    const {setUser} = useContext(Usercontext) 
     const {setIsName} = useContext(Usercontext)
 
     useEffect(()=>{

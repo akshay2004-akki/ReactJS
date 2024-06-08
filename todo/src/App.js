@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./App.css";
+//import "./App.css";
 import {TodoProvider} from './context'
 import TodoForm from "./components/TodoForm";
 import TodoItem from "./components/TodoItem";
@@ -16,7 +16,7 @@ function App() {
   const editTodo = (id,todo)=>{
     setTodos((prevTodo)=>prevTodo.map((Todo)=>Todo.id===id ? todo:prevTodo));
   }
-
+ 
   const checkCompleted = (id)=>{
     setTodos((prev)=>prev.map((prevTodo)=>prevTodo.id===id ? {...prevTodo,completed : !prevTodo.completed} : prevTodo ))
   }
